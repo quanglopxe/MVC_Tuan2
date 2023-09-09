@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Index2";
+}
+
+<h2>Index2</h2>
+
+<div class="container-fluid">
+    <ul class="list-group">Danh sách trái cây</ul>
+    @{
+    foreach (string item in (List<string>)ViewData["Fruit"])
+    {
+        <li class="list-group-item list-group-item-info">@item </li>
+    }
+}
+    @*@{
+        foreach(var item in ViewBag.Fruit)
+        {
+             <li class="list-group-item list-group-item-info">@item </li>
+        }
+    }*@
+</div> 

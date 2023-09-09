@@ -1,0 +1,21 @@
+﻿@model DuongThuanQuang_Bai5_BTMAU.Models.Sach
+@{
+    ViewBag.Title = "Index2";
+}
+
+<h2 style="color:blue;display:flex;justify-content:center">NHẬP SÁCH VÀO KHO</h2>
+
+<div class="container-fluid">
+    <form action="/home/create" method="post">
+        <label class="form-label">Mã sách:</label>
+        <input type="text" class="form-control" id="ma" />
+        <label class="form-label">Tên sách:</label>
+        <input type="text" class="form-control" id="ten" />
+        <label class="form-label">Giá:</label>
+        <input type="text" class="form-control" id="gia" />
+        <label class="form-label">Ảnh bìa:</label>
+        
+    </form>
+    <button type="button" class="btn btn-secondary btn-sm">Browse...</button><br />
+    <button style="display:flex;justify-content:center" type="submit" class="btn btn-primary m-auto">NHẬP</button>
+</div>

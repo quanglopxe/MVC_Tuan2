@@ -1,0 +1,24 @@
+﻿@model DuongThuanQuang_Bai4_BTMAU.Models.NhanVien
+@{
+    ViewBag.Title = "Index2";
+}
+
+<h2 style="background-color:blue;color:white;display:flex;justify-content:center">THÔNG TIN NHÂN VIÊN</h2>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4">
+            <p>Mã Nhân Viên:</p>
+            <p>Tên Nhân Viên:</p>
+            <p>Giới tính:</p>
+            <p>Hình nhân viên:</p>
+        </div>
+        <div class="col-8">
+            <p>@Model.maNV</p>
+            <p>@Model.tenNV</p>
+            <p>@Model.GT</p>
+            <img src="~/img/@Model.Hinh" />
+        </div>
+    </div>
+    
+</div>

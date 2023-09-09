@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "MHList";
+}
+
+<h2>MHList</h2>
+<div class="container-fluid">
+    @{
+       if(ViewBag.DuLieu!=null)
+    {
+        foreach (var item in ViewBag.DuLieu)
+        {
+            @item <br />
+        }
+    } 
+    }
+    
+    
+</div>
+
